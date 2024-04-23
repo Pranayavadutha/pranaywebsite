@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="Timescheduling.css">
+</head>
+<body>
+    <form id="studyPlanForm">
+        <label for="subject">Select a Subject:</label>
+        <select id="subject" name="subject">
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <!-- Add more subjects as needed -->
+        </select>
+
+        <label for="studyHours">Study Hours:</label>
+        <input type="number" id="studyHours" name="studyHours" placeholder="Enter study hours">
+
+        <label for="revisionHours">Revision Hours:</label>
+        <input type="number" id="revisionHours" name="revisionHours" placeholder="Enter revision hours">
+
+        <label for="selftestHours">Selftest Hours:</label>
+        <input type="number" id="selftestHours" name="selftestHours" placeholder="Enter selftest hours">
+        
+        <label for="breakHours">Break Hours:</label>
+        <input type="number" id="breakHours" name="breakHours" placeholder="Enter break hours">
+         
+        <label for="sleepHours">Sleep Hours:</label>
+        <input type="number" id="sleepHours" name="sleepHours" placeholder="Enter sleep hours">
+
+
+        <button type="button" onclick="addStudyPlan()">Add Study Plan</button>
+    </form>
+
+    <div id="studyPlanList"></div>
+    <script src="Timescheduling.js"></script>
+</body>
+</html>
